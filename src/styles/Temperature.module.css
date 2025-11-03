@@ -1,0 +1,16 @@
+.temperature {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    gap: 0.5rem;
+
+}
+
+.value {
+    font-size: 3rem;
+}
+
+.units {
+    font-size: 1.5rem;
+}   
