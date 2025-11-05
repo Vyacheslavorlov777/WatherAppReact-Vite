@@ -1,9 +1,10 @@
 .container {
   min-height: 100vh;
   width: 100vw;
-  background: linear-gradient(to bottom right, #60a5fa, #3b82f6, #2563eb);
+  background: linear-gradient(to bottom right, #8d44d1, #3b82f6, #c03fe1);
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   padding: 1rem;
   gap: 1rem;
@@ -12,6 +13,7 @@
 .watherContainer {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 
@@ -23,4 +25,62 @@
   padding: 2rem;
   max-width: 64rem;
   width: 100%;
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input{
+  width: 300px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background-color: #3d0aab;
+  color: #000000;
+}
+
+.btn{
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to bottom right, #8c14ee, #3d0dfc, #471649);
+  color: #fff;
+}
+
+.btnCitys{
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to bottom right, #13292f, #1d1a2c, #341535);
+  color: #fff;
+}
+
+.btnMyLoc{
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  background: linear-gradient(to bottom right, #7410ff, #5d0462, #f700ff);
+  color: #fff;
+}
+
+
+
+
+.cardWeather{
+  display: flex;
+  gap: 1rem;
+}
+
+
+
+.waitingComponent{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
 }
