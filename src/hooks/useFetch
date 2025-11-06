@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getCurrentWeather, getForecast, getWeatherByLocation } from '../services/weatherApi.js';
   
+
 /**
  * @param {string} url - адрес запроса
  * @param {object} [options] - дополнительные настройки fetch 
