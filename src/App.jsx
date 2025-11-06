@@ -1,13 +1,14 @@
 // src/App.jsx
 import { useState } from 'react';
-import { useWeather } from './hooks/useFetch';
-import { getCurrentWeather, getForecast, getWeatherByLocation } from './services/weatherApi';
+import { useWeather } from './hooks/useWeather.js';
+// import { getCurrentWeather, getForecast, getWeatherByLocation } from './services/weatherApi';
 import styles from './styles/App.module.css';
 import citys from './assets/citys';
 
 function App() {
   const [city, setCity] = useState('');
-  const {weather, forecast, loading, error, searchWeather, getMyLocationWeather } = useWeather(city)
+  const {weather, forecast, loading, error, searchWeather, getMyLocationWeather } = useWeather(city);
+  
 
   // const [searchCounter, setSearchCounter] = useState(0);
   // const [weather, setWeather] = useState(null);
@@ -56,7 +57,6 @@ function App() {
   // };
 
   const createtedBtnCity = (citys) => {
-
     return citys.map((city) => {
       return (
         <button className={styles.btnCitys} key={city} onClick={() => searchWeather(city)}>
